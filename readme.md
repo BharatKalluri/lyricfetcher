@@ -26,7 +26,6 @@ The get_lyrics takes 3 arguments
 + Source
   + azlyrics - Queries azlyrics for song lyrics
   + metrolyrics - source of information will be metrolyrics.com
-  + lyricswikia - lyrics.wikia.com, you get it..
 + Artist - The second argument takes in the name of the artist seperated by spaces
 + Song - The song name speprated by spaces
 
