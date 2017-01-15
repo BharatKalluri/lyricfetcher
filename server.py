@@ -7,7 +7,7 @@ from lyricfetcher.sources import AZlyrics as az
 from lyricfetcher.sources import Lyricswikia as lw
 
 app = Sanic(__name__)
-
+PORT = int(os.environ.get('PORT', 5000))
 @app.route('/')
 async def helper(request):
     """
@@ -53,4 +53,4 @@ async def get_lyrics(request, source, artist, song):
     else:
         return text("Bad Request! Try visiting Home page for help")
 
-app.run(host="0.0.0.0", port=5000)
+app.run(host="0.0.0.0", port=PORT)
