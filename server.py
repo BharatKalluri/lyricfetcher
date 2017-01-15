@@ -35,13 +35,13 @@ async def get_lyrics(request, source, artist, song):
             "Song": song,
             "Lyrics": ml.lyrics_get(ml.urlmaker(artist, song))
             })
-    if source == 'az':
-        return json({
-            "source": "az",
-            "artist": artist,
-            "Song": song,
-            "Lyrics": az.lyrics_get(az.urlmaker(artist, song))
-        })
+    # if source == 'az':
+    #     return json({
+    #         "source": "az",
+    #         "artist": artist,
+    #         "Song": song,
+    #         "Lyrics": az.lyrics_get(az.urlmaker(artist, song))
+    #     })
     if source == 'lyricswikia':
         return json({
             "source": 'lyricswikia',

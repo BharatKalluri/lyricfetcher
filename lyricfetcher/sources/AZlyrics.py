@@ -8,7 +8,7 @@ def urlmaker(artist, song):
     """
     artist = ''.join(artist.split(' '))
     song = ''.join(song.split(' '))
-    url = 'http://www.azlyrics.com/lyrics/'+artist+'/'+song+'.html'
+    url = 'https://crossorigin.me/http://www.azlyrics.com/lyrics/'+artist+'/'+song+'.html'
     return url
 
 def lyrics_get(url):
