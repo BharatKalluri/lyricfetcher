@@ -44,7 +44,7 @@ async def get_lyrics(request, source, artist, song):
         })
     if source == 'lyricswikia':
         return json({
-            "source": "MetroLyrics",
+            "source": 'lyricswikia',
             "artist": artist,
             "Song": song,
             "Lyrics": lw.lyrics_get(lw.urlmaker(artist, song))
