@@ -7,7 +7,7 @@ from lyricfetcher.sources import AZlyrics as az
 from lyricfetcher.sources import Lyricswikia as lw
 
 app = Sanic(__name__)
-PORT = int(os.environ.get('PORT', 5000))
+PORT = int(os.environ.get('PORT',5000))
 @app.route('/')
 async def helper(request):
     """
