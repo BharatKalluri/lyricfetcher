@@ -37,7 +37,7 @@ async def get_lyrics(request, source, artist, song):
             })
     if source == 'az':
         return json({
-            "source": "MetroLyrics",
+            "source": "az",
             "artist": artist,
             "Song": song,
             "Lyrics": az.lyrics_get(az.urlmaker(artist, song))
@@ -52,4 +52,4 @@ async def get_lyrics(request, source, artist, song):
     else:
         return text("Bad Request! Try visiting Home page for help")
 
-app.run(host='0.0.0.0', port=int(os.environ['PORT']))
+app.run(host='0.0.0.0', port=int(os.environ['PORT']),DEBUG=True)
