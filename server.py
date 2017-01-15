@@ -52,4 +52,4 @@ async def get_lyrics(request, source, artist, song):
     else:
         return text("Bad Request! Try visiting Home page for help")
 
-app.run(host='0.0.0.0', port=int(os.environ['PORT']),DEBUG=True)
+app.run(host='0.0.0.0', port=int(os.environ['PORT']),debug=True)
