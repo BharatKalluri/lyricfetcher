@@ -16,7 +16,7 @@ async def helper(request):
 """A lyrics api, the first argument is the source \
 [can be metro for metrolyrics or lyricswikia for lyricswikia] \
 the second is the artist name, and the third is the song name.\n
-example: /metro/linkin park/in the end\n
+example: pylyricfetcher.herokuapp.com/lyrics/lyricswikia/linkin park/numb\n
 NOTE: All content is scraped from public web pages, only to be used for personal purposes"""
 )
 
