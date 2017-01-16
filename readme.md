@@ -14,7 +14,7 @@ An example call to the API can be as follows
 
 Usage : http://pylyricfetcher.herokuapp.com/api/lyricswikia/ArtistName/SongName
 
-Example: https://pylyricfetcher.herokuapp.com/lyrics/lyricswikia/eminem/berzerk
+Example: https://pylyricfetcher.herokuapp.com/api/lyricswikia/eminem/berzerk
 
 to retrive the lyrics of berzerk from lyrics wikia. Try it Out!
 
