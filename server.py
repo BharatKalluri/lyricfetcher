@@ -21,7 +21,7 @@ NOTE: All content is scraped from public web pages, only to be used for personal
 )
 
 
-@app.route('/lyrics/<source>/<artist>/<song>')
+@app.route('/api/<source>/<artist>/<song>')
 async def get_lyrics(request, source, artist, song):
     """
     A route to indicate what to do after the source info is in
