@@ -8,7 +8,7 @@ def urlmaker(artist, song):
     """
     artist = ''.join(artist.split(' '))
     song = ''.join(song.split(' '))
-    url = 'https://crossorigin.me/http://www.azlyrics.com/lyrics/'+artist+'/'+song+'.html'
+    url = 'http://www.azlyrics.com/lyrics/'+artist+'/'+song+'.html'
     return url
 
 def lyrics_get(url):
@@ -16,7 +16,6 @@ def lyrics_get(url):
     A function to get lyrics from a url
     """
     html_doc = urllib.request.urlopen(url)
-    print(url,html_doc)
     soup = BeautifulSoup(html_doc, 'html.parser')
     lyrics = soup.find_all("div", attrs={"class": None, "id": None})
     lyrics = [x.getText() for x in lyrics]

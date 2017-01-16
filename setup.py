@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='lyricfetcher',
-      version='0.1',
+      version='0.2',
       description='lyricfetcher',
       url='http://github.com/bharatkalluri/lyricfetcher',
       author='Bharat Kalluri',

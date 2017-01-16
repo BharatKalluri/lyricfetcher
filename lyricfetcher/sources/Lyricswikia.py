@@ -1,5 +1,4 @@
-import urllib.request
-import re
+import urllib.request,re
 from bs4 import BeautifulSoup
 
 
@@ -21,4 +20,3 @@ def lyrics_get(url):
     lyrics = soup.find("div", attrs={"class": "lyricbox"})
     refined = BeautifulSoup(re.sub(r'<br/>', '\n', str(lyrics)), 'html.parser')
     return refined.get_text()
-    
