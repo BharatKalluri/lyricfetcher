@@ -1,7 +1,5 @@
-Sanic==0.2.0
 beautifulsoup4==4.5.1
--e git+https://github.com/BharatKalluri/lyricfetcher.git@f2630fa0019719bf0a11bcb88428ce95a46815e4#egg=lyricfetcher
+-e git+https://github.com/BharatKalluri/lyricfetcher.git@f40cbaca0b4f6c447be6357c803ecb81be9d4393#egg=lyricfetcher
 requests==2.12.4
 requests-download==0.1.1
 requests-toolbelt==0.7.0
-gunicorn==19.6.0
