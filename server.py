@@ -2,9 +2,7 @@ from sanic import Sanic
 from sanic.response import json, text
 import os
 
-from lyricfetcher.sources import MetroLyrics as ml
-# from lyricfetcher.sources import AZlyrics as az
-from lyricfetcher.sources import Lyricswikia as lw
+import lyricfetcher as lw
 
 app = Sanic(__name__)
 @app.route('/')
@@ -13,11 +11,13 @@ async def helper(request):
     A helper function for the home visit
     """
     return text(
-"""A lyrics api, the first argument is the source \
-[can be metro for metrolyrics or lyricswikia for lyricswikia] \
-the second is the artist name, and the third is the song name.\n
-example: pylyricfetcher.herokuapp.com/lyrics/lyricswikia/linkin park/numb\n
-NOTE: All content is scraped from public web pages, only to be used for personal purposes"""
+        """
+        A lyrics api, the first argument is the source \
+        [can be metro for metrolyrics or lyricswikia for lyricswikia] \
+        the second is the artist name, and the third is the song name.\n
+        example: pylyricfetcher.herokuapp.com/lyrics/lyricswikia/linkin park/numb\n
+        NOTE: All content is scraped from public web pages, only to be used for personal purposes
+        """
 )
 
 
@@ -33,7 +33,7 @@ async def get_lyrics(request, source, artist, song):
             "source": "MetroLyrics",
             "artist": artist,
             "Song": song,
-            "Lyrics": ml.lyrics_get(ml.urlmaker(artist, song))
+            "Lyrics": lw.get_lyrics('metrolyrics', artist, song)
             })
     # if source == 'az':
     #     return json({
@@ -47,7 +47,14 @@ async def get_lyrics(request, source, artist, song):
             "source": 'lyricswikia',
             "artist": artist,
             "Song": song,
-            "Lyrics": lw.lyrics_get(lw.urlmaker(artist, song))
+            "Lyrics": lw.get_lyrics('metrolyrics', artist, song)
+        })
+    if source == 'genius':
+        return json({
+            "source": 'genius',
+            "artist": artist,
+            "Song": song,
+            "Lyrics": lw.get_lyrics('genius', artist, song)
         })
     else:
         return text("Bad Request! Try visiting Home page for help")

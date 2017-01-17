@@ -22,4 +22,3 @@ def lyrics_get(url):
     for i in soup.find_all("p", class_='verse'):
         complete_lyrics.append(i.get_text())
     return '\n'.join(complete_lyrics)
-    

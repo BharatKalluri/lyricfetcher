@@ -21,6 +21,7 @@ to retrive the lyrics of berzerk from lyrics wikia. Try it Out!
 There are 2 sources as of now
 + lyricswikia
 + MetroLyrics
++ Genius
 
 The next arguments are The artist name and the song name!
 
@@ -50,6 +51,7 @@ The get_lyrics takes 3 arguments
 + Source
   + azlyrics - Queries azlyrics for song lyrics
   + metrolyrics - source of information will be metrolyrics.com
+  + genius - genius.com , you get it
 + Artist - The second argument takes in the name of the artist seperated by spaces
 + Song - The song name speprated by spaces
 

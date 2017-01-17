@@ -1,4 +1,4 @@
-import urllib.request
+import requests
 from bs4 import BeautifulSoup
 
 
@@ -15,7 +15,7 @@ def lyrics_get(url):
     """
     A function to get lyrics from a url
     """
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36"})
-    soup = BeautifulSoup(urllib.request.urlopen(req), 'html.parser')
+    req = requests.get(url)
+    soup = BeautifulSoup(req.content, 'html.parser')
     lyrics = soup.find("lyrics")
     return lyrics.text.strip()

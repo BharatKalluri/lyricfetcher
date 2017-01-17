@@ -1,6 +1,7 @@
 from .sources import AZlyrics as az
 from .sources import Lyricswikia as lw
 from .sources import MetroLyrics as ml
+from .sources import Genius
 
 """Lyric Fetcher to fetch lyrics from diffrent sources!"""
 
@@ -15,5 +16,7 @@ def get_lyrics(source,artist,song):
         return lw.lyrics_get(lw.urlmaker(artist,song))
     elif source == 'metrolyrics':
         return ml.lyrics_get(ml.urlmaker(artist,song))
+    elif source == 'genius':
+        return Genius.lyrics_get(Genius.urlmaker(artist,song))
     else:
         raise RuntimeError('argument source not valid')
