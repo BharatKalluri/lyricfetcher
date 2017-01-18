@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AZlyrics.py	lyricfetcher/sources/AZlyrics.py	1;"	kind:file	line:1
+BeautifulSoup	lyricfetcher/sources/AZlyrics.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:2
+BeautifulSoup	lyricfetcher/sources/Genius.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:2
+BeautifulSoup	lyricfetcher/sources/Lyricswikia.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:2
+BeautifulSoup	lyricfetcher/sources/MetroLyrics.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:2
+Genius	lyricfetcher/main.py	/^from .sources import Genius$/;"	kind:namespace	line:4
+Genius.py	lyricfetcher/sources/Genius.py	1;"	kind:file	line:1
+Lyricswikia.py	lyricfetcher/sources/Lyricswikia.py	1;"	kind:file	line:1
+MetroLyrics.py	lyricfetcher/sources/MetroLyrics.py	1;"	kind:file	line:1
+Sanic	server.py	/^from sanic import Sanic$/;"	kind:namespace	line:1
+__init__.py	lyricfetcher/__init__.py	1;"	kind:file	line:1
+__init__.py	lyricfetcher/sources/__init__.py	1;"	kind:file	line:1
+app	server.py	/^app = Sanic(__name__)$/;"	kind:variable	line:7
+author	setup.py	/^      author='Bharat Kalluri',$/;"	kind:variable	line:7
+author_email	setup.py	/^      author_email='bharatkalluri@protonmail.com',$/;"	kind:variable	line:8
+az	lyricfetcher/main.py	/^from .sources import AZlyrics as az$/;"	kind:namespace	line:1
+description	setup.py	/^      description='lyricfetcher',$/;"	kind:variable	line:5
+get_lyrics	lyricfetcher/__init__.py	/^from .main import get_lyrics$/;"	kind:namespace	line:1
+get_lyrics	lyricfetcher/main.py	/^def get_lyrics(source,artist,song):$/;"	kind:function	line:8
+get_lyrics	server.py	/^async def get_lyrics(request, source, artist, song):$/;"	kind:function	line:25
+helper	server.py	/^async def helper(request):$/;"	kind:function	line:9
+json	server.py	/^from sanic.response import json, text$/;"	kind:namespace	line:2
+license	setup.py	/^      license='MIT',$/;"	kind:variable	line:9
+lw	lyricfetcher/main.py	/^from .sources import Lyricswikia as lw$/;"	kind:namespace	line:2
+lw	server.py	/^import lyricfetcher as lw$/;"	kind:namespace	line:5
+lyrics_get	lyricfetcher/sources/AZlyrics.py	/^def lyrics_get(url):$/;"	kind:function	line:14
+lyrics_get	lyricfetcher/sources/Genius.py	/^def lyrics_get(url):$/;"	kind:function	line:14
+lyrics_get	lyricfetcher/sources/Lyricswikia.py	/^def lyrics_get(url):$/;"	kind:function	line:14
+lyrics_get	lyricfetcher/sources/MetroLyrics.py	/^def lyrics_get(url):$/;"	kind:function	line:14
+main.py	lyricfetcher/main.py	1;"	kind:file	line:1
+ml	lyricfetcher/main.py	/^from .sources import MetroLyrics as ml$/;"	kind:namespace	line:3
+os	server.py	/^import os$/;"	kind:namespace	line:3
+packages	setup.py	/^      packages=['lyricfetcher'],$/;"	kind:variable	line:10
+re	lyricfetcher/sources/Lyricswikia.py	/^import urllib.request,re$/;"	kind:namespace	line:1
+request	lyricfetcher/sources/AZlyrics.py	/^import urllib.request$/;"	kind:namespace	line:1
+request	lyricfetcher/sources/Lyricswikia.py	/^import urllib.request,re$/;"	kind:namespace	line:1
+requests	lyricfetcher/sources/Genius.py	/^import requests$/;"	kind:namespace	line:1
+requests	lyricfetcher/sources/MetroLyrics.py	/^import requests$/;"	kind:namespace	line:1
+server.py	server.py	1;"	kind:file	line:1
+setup	setup.py	/^from setuptools import setup$/;"	kind:namespace	line:1
+setup.py	setup.py	1;"	kind:file	line:1
+sourceTest.py	lyricfetcher/tests/sourceTest.py	1;"	kind:file	line:1
+text	server.py	/^from sanic.response import json, text$/;"	kind:namespace	line:2
+url	setup.py	/^      url='http:\/\/github.com\/bharatkalluri\/lyricfetcher',$/;"	kind:variable	line:6
+urllib	lyricfetcher/sources/AZlyrics.py	/^import urllib.request$/;"	kind:namespace	line:1
+urllib	lyricfetcher/sources/Lyricswikia.py	/^import urllib.request,re$/;"	kind:namespace	line:1
+urlmaker	lyricfetcher/sources/AZlyrics.py	/^def urlmaker(artist, song):$/;"	kind:function	line:5
+urlmaker	lyricfetcher/sources/Genius.py	/^def urlmaker(artist, song):$/;"	kind:function	line:5
+urlmaker	lyricfetcher/sources/Lyricswikia.py	/^def urlmaker(artist, song):$/;"	kind:function	line:5
+urlmaker	lyricfetcher/sources/MetroLyrics.py	/^def urlmaker(artist, song):$/;"	kind:function	line:4
+version	setup.py	/^      version='0.3',$/;"	kind:variable	line:4
+zip_safe	setup.py	/^      zip_safe=False)$/;"	kind:variable	line:11

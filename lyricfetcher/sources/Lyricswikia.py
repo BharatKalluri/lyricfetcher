@@ -11,12 +11,17 @@ def urlmaker(artist, song):
     url = 'http://lyrics.wikia.com/wiki/'+artist+':'+song
     return url
 
+
 def lyrics_get(url):
     """
     A function to get lyrics from a url
     """
-    html_doc = urllib.request.urlopen(url)
-    soup = BeautifulSoup(html_doc, 'html.parser')
-    lyrics = soup.find("div", attrs={"class": "lyricbox"})
-    refined = BeautifulSoup(re.sub(r'<br/>', '\n', str(lyrics)), 'html.parser')
-    return refined.get_text()
+    try:
+        html_doc = urllib.request.urlopen(url)
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        lyrics = soup.find("div", attrs={"class": "lyricbox"})
+        refined = BeautifulSoup(re.sub(r'<br/>', '\n', str(lyrics)), \
+        'html.parser')
+        return refined.get_text()
+    except urllib.error.HTTPError as err:
+        return err.getcode()

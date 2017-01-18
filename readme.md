@@ -29,7 +29,7 @@ The next arguments are The artist name and the song name!
 
 [![PyPI version](https://badge.fury.io/py/lyricfetcher.svg)](https://badge.fury.io/py/lyricfetcher)
 
-A python Package to get the lyrics of a Song
+A python Package/Command Line Utility to get the lyrics of a Song
 
 To install the package
 
@@ -42,6 +42,17 @@ and import and use
 ```bash
 >>> import lyricfetcher
 >>> print(lyricfetcher.get_lyrics('azlyrics','linkin park','numb'))
+```
+
+or, You can use it directly from the terminal
+
+```bash
+# For help, just type
+lyricfetcher -h
+# Just call lyricfetcher, with the artist name and song name
+lyricfetcher eminem "lose yourself" 
+# Or jsut indicate a --source and you are good to go!
+lyricfetcher --source lyricswikia eminem "lose yourself"
 ```
 
 This prints out all the lyrics of linkin parks's awesome song

@@ -11,11 +11,15 @@ def urlmaker(artist, song):
     url = 'https://genius.com/{}-{}-lyrics'.format(artist, song)
     return url
 
+
 def lyrics_get(url):
     """
     A function to get lyrics from a url
     """
     req = requests.get(url)
-    soup = BeautifulSoup(req.content, 'html.parser')
-    lyrics = soup.find("lyrics")
-    return lyrics.text.strip()
+    if req.status_code == 200:
+        soup = BeautifulSoup(req.content, 'html.parser')
+        lyrics = soup.find("lyrics")
+        return lyrics.text.strip()
+    else:
+        return req.status_code
