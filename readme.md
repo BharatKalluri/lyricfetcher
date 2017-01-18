@@ -27,7 +27,9 @@ The next arguments are The artist name and the song name!
 
 # [LyricFetcher](https://github.com/BharatKalluri/lyricfetcher/tree/master/lyricfetcher)
 
+[![Build Status](https://travis-ci.org/BharatKalluri/lyricfetcher.svg?branch=master)](https://travis-ci.org/BharatKalluri/lyricfetcher)
 [![PyPI version](https://badge.fury.io/py/lyricfetcher.svg)](https://badge.fury.io/py/lyricfetcher)
+[![Code Climate](https://codeclimate.com/github/BharatKalluri/lyricfetcher/badges/gpa.svg)](https://codeclimate.com/github/BharatKalluri/lyricfetcher)
 
 A python Package/Command Line Utility to get the lyrics of a Song
 
