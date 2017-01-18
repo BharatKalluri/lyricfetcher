@@ -1,6 +1,6 @@
 # PyLyricFetcher 🔥🔥
 
-A Package and API to search lyrics from different web sources
+A Package/Command line app and API to search lyrics from different web sources
 
 #### Note: All the lyrics are scraped from a public web pages of their respective domains, Please do not use this in Production as it is not allowed by the scraped website.Use this at your own discretion.
 
