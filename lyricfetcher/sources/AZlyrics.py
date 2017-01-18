@@ -1,6 +1,9 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
+"""
+The Website Does not want users to scrape their content!
+"""
 
 def urlmaker(artist, song):
     """

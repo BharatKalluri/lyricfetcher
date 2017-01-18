@@ -7,14 +7,14 @@ class TestSourceMethods(unittest.TestCase):
     A Class to test all source's
     """
 
-    def test_azlyrics(self):
-        """
-        Method to test azlyrics
-        """
-        bad_res = lw.get_lyrics('azlyrics', 'eminem', 'los yourself')
-        good_res = lw.get_lyrics('azlyrics', 'eminem', 'lose yourself')
-        self.assertEqual(bad_res, 404)
-        self.assertTrue(good_res)
+    # def test_azlyrics(self):
+    #     """
+    #     Method to test azlyrics, Not recommended
+    #     """
+    #     bad_res = lw.get_lyrics('azlyrics', 'eminem', 'los yourself')
+    #     good_res = lw.get_lyrics('azlyrics', 'eminem', 'lose yourself')
+    #     self.assertEqual(bad_res, 404)
+    #     self.assertTrue(good_res)
 
     def test_genius(self):
         """

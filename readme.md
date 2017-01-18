@@ -18,7 +18,7 @@ Example: https://pylyricfetcher.herokuapp.com/api/lyricswikia/eminem/berzerk
 
 to retrive the lyrics of berzerk from lyrics wikia. Try it Out!
 
-There are 2 sources as of now
+There are the following sources as of now
 + lyricswikia
 + MetroLyrics
 + Genius
@@ -62,8 +62,8 @@ This prints out all the lyrics of linkin parks's awesome song
 ## Options
 The get_lyrics takes 3 arguments
 + Source
-  + azlyrics - Queries azlyrics for song lyrics
   + metrolyrics - source of information will be metrolyrics.com
+  + LyricsWikia - Queries lyrics.wikia.com for song lyrics
   + genius - genius.com , you get it
 + Artist - The second argument takes in the name of the artist seperated by spaces
 + Song - The song name speprated by spaces
