@@ -4,27 +4,6 @@ A Package/Command line app and API to search lyrics from different web sources
 
 #### Note: All the lyrics are scraped from a public web pages of their respective domains, Please do not use this in Production as it is not allowed by the scraped website.Use this at your own discretion.
 
-# API
-The API is hosted at pylyricfetcher.herokuapp.com. It is written using the super fast
-[Sanic](https://github.com/channelcat/sanic) as the backend. (Please be patient if your
-first call is slow, as it uses Heroku free plan so the system takes time to start)
-
-## API calls
-An example call to the API can be as follows
-
-Usage : http://pylyricfetcher.herokuapp.com/api/lyricswikia/ArtistName/SongName
-
-Example: https://pylyricfetcher.herokuapp.com/api/lyricswikia/eminem/berzerk
-
-to retrive the lyrics of berzerk from lyrics wikia. Try it Out!
-
-There are the following sources as of now
-+ lyricswikia
-+ MetroLyrics
-+ Genius
-
-The next arguments are The artist name and the song name!
-
 # [LyricFetcher](https://github.com/BharatKalluri/lyricfetcher/tree/master/lyricfetcher)
 
 [![Build Status](https://travis-ci.org/BharatKalluri/lyricfetcher.svg?branch=master)](https://travis-ci.org/BharatKalluri/lyricfetcher)
@@ -69,3 +48,25 @@ The get_lyrics takes 3 arguments
 + Song - The song name speprated by spaces
 
 And returns the lyrics in text form!
+
+
+# API
+The API is hosted at pylyricfetcher.herokuapp.com. It is written using the super fast
+[Sanic](https://github.com/channelcat/sanic) as the backend. (Please be patient if your
+first call is slow, as it uses Heroku free plan so the system takes time to start)
+
+## API calls
+An example call to the API can be as follows
+
+Usage : http://pylyricfetcher.herokuapp.com/api/lyricswikia/ArtistName/SongName
+
+Example: https://pylyricfetcher.herokuapp.com/api/lyricswikia/eminem/berzerk
+
+to retrive the lyrics of berzerk from lyrics wikia. Try it Out!
+
+There are the following sources as of now
++ lyricswikia
++ MetroLyrics
++ Genius
+
+The next arguments are The artist name and the song name!
