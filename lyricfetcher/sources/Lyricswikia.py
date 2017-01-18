@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 def urlmaker(artist, song):
     """
-    Make A url from the given artist and song name
+    Make A url for lyricswikia.com
     """
     artist = '_'.join(artist.split(' '))
     song = '_'.join(song.split(' '))
