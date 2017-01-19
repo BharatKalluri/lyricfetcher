@@ -2,7 +2,7 @@
 
 A Package/Command line app and API to search lyrics from different web sources
 
-#### Note: All the lyrics are scraped from a public web pages of their respective domains, Please do not use this in Production as it is not allowed by the scraped website.Use this at your own discretion.
+#### Note: All the lyrics are scraped from a public web pages of their respective domains. Please do not use this in Production as it is not allowed by the scraped website. Use this at your own discretion.
 
 # [LyricFetcher](https://github.com/BharatKalluri/lyricfetcher/tree/master/lyricfetcher)
 
@@ -32,7 +32,7 @@ or, You can use it directly from the terminal
 lyricfetcher -h
 # Just call lyricfetcher, with the artist name and song name
 lyricfetcher eminem "lose yourself" 
-# Or jsut indicate a --source and you are good to go!
+# Or just indicate a --source and you are good to go!
 lyricfetcher --source lyricswikia eminem "lose yourself"
 ```
 
