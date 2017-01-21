@@ -32,7 +32,7 @@ or, You can use it directly from the terminal
 lyricfetcher -h
 # Just call lyricfetcher, with the artist name and song name
 lyricfetcher eminem "lose yourself" 
-# Or jsut indicate a --source and you are good to go!
+# Or just indicate a --source and you are good to go!
 lyricfetcher --source lyricswikia eminem "lose yourself"
 ```
 
@@ -53,7 +53,7 @@ And returns the lyrics in text form!
 # API
 The API is hosted at pylyricfetcher.herokuapp.com. It is written using the super fast
 [Sanic](https://github.com/channelcat/sanic) as the backend. (Please be patient if your
-first call is slow, as it uses Heroku free plan so the system takes time to start)
+first call is slow, as it uses Heroku free plan so the vm takes time to start)
 
 ## API calls
 An example call to the API can be as follows
@@ -69,4 +69,4 @@ There are the following sources as of now
 + MetroLyrics
 + Genius
 
-The next arguments are The artist name and the song name!
+The next arguments are the Artist name and the Song name!
