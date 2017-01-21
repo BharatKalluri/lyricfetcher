@@ -1,0 +1,3 @@
+- [x] Tests
+- [X] Continuous Integration
+- [X] CommandLine Application
